@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemelos Digitales | Resiliencia Climática</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar is-dark" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item has-text-weight-bold" href="#inicio">
+       Digital Twins HN - Alejandro Callison
+    </a>
+
+    <a role="button" class="navbar-burger" data-target="navMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#inicio">Inicio</a>
+      <a class="navbar-item" href="#servicios">Servicios</a>
+      <a class="navbar-item" href="#nosotros">Acerca de Nosotros</a>
+      <a class="navbar-item" href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<section id="inicio" class="hero is-info is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Gemelos Digitales para la Resiliencia de Infraestructura
+      </h1>
+
+      <h2 class="subtitle">
+        Modelado predictivo y simulación avanzada para prevención de desastres en cuencas y zonas urbanas de Honduras
+      </h2>
+
+      <p class="is-size-5">
+        Plataforma tecnológica basada en IoT en tiempo real, análisis de datos masivos y simulación computacional de alto rendimiento para la generación de alertas tempranas y apoyo a la transparencia en la gestión pública.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="section">
+  <div class="container">
+    <h2 class="title has-text-centered">Servicios</h2>
+
+    <div class="columns">
+
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/400/300?random=1" alt="IoT">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Monitoreo IoT en Tiempo Real</p>
+            <p>Captura y análisis continuo de variables hidrológicas y urbanas mediante sensores distribuidos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/400/300?random=2" alt="Simulación">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Simulación Predictiva</p>
+            <p>Modelos computacionales de alto rendimiento para anticipar inundaciones y eventos climáticos extremos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/400/300?random=3" alt="Alertas">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Alertas Tempranas Automatizadas</p>
+            <p>Sistemas inteligentes de notificación en tiempo real para gestión de riesgo y toma de decisiones.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="section has-background-light">
+  <div class="container">
+    <h2 class="title has-text-centered has-text-dark">Acerca de Nosotros</h2>
+
+    <div class="content has-text-centered has-text-dark">
+      <p>
+        Somos una firma de consultoría tecnológica enfocada en el desarrollo de gemelos digitales para resiliencia climática e infraestructura crítica.
+        Nuestro objetivo es fortalecer la transparencia gubernamental mediante el uso de datos abiertos y modelos predictivos.
+      </p>
+
+      <p>
+        Trabajamos con instituciones públicas, ONGs y organismos internacionales en la reducción del impacto de desastres naturales en Honduras.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <h2 class="title has-text-centered">Contacto</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <form>
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Tu nombre">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Correo</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="correo@ejemplo.com">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Mensaje</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+          </div>
+
+          <div class="control">
+            <button class="button is-info is-fullwidth">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer has-background-dark has-text-white">
+  <div class="content has-text-centered">
+    <p><strong>Digital Twins HN</strong> - Consultoría en resiliencia climática</p>
+    <p>📍 Choluteca | 📧 alecmendieta11@gmail.com.hn | 📞 +504 3141-1198</p>
+
+   
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burgers = Array.from(document.querySelectorAll('.navbar-burger'));
+
+    burgers.forEach(el => {
+      el.addEventListener('click', () => {
+        const target = document.getElementById(el.dataset.target);
+        el.classList.toggle('is-active');
+        target.classList.toggle('is-active');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

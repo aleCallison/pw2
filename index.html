@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Portales Web 2</title>
+
+    <link rel="stylesheet" href="/styles/main.less" />
+    <script type="module" src="/scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mi Portafolio</h1>
+            <button id="hamburger" class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#news">Proyectos</a></li>
+                <li><a href="#referals">Referencias</a></li>
+                <li><a href="#precios">Tecnologías</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="hero">
+            <div>
+                <picture>
+                    <source srcset="https://picsum.photos/id/180/1200/720" media="(min-width:1024px)" />
+                    <source srcset="https://picsum.photos/id/180/1024/640" media="(min-width:720px)" />
+                    <img src="https://picsum.photos/id/180/480/480" alt="Imagen principal del portafolio"/>
+                </picture>
+
+                <div class="action">
+                    <h2>Portafolio Web con Vite y LESS</h2>
+                    <p>
+                        Proyecto desarrollado para Portales Web 2, utilizando Vite como web bundler,
+                        estilos generados con LESS, CSS minificado y purgado.
+                    </p>
+                    <a href="#contact">Contactarme</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="card">
+                <div class="card_image">
+                    <img src="https://picsum.photos/id/0/100/100" alt="Proyecto web" />
+                </div>
+                <h2>Proyecto 1</h2>
+                <p>
+                    Desarrollo de una página web estructurada con HTML, aplicando diseño responsivo
+                    y organización semántica del contenido.
+                </p>
+                <div class="card_footer">
+                    <a href="#inicio">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_image">
+                    <img src="https://picsum.photos/id/20/100/100" alt="Proyecto con LESS" />
+                </div>
+                <h2>Proyecto 2</h2>
+                <p>
+                    Implementación de estilos utilizando LESS, variables, archivos separados
+                    y reglas reutilizables para mejorar el mantenimiento del diseño.
+                </p>
+                <div class="card_footer">
+                    <a href="#inicio">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_image">
+                    <img src="https://picsum.photos/id/60/100/100" alt="Proyecto con Vite" />
+                </div>
+                <h2>Proyecto 3</h2>
+                <p>
+                    Uso de Vite para empaquetar el sitio, generar archivos optimizados,
+                    minificar recursos y preparar el despliegue en GitHub Pages.
+                </p>
+                <div class="card_footer">
+                    <a href="#inicio">Ver Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="referals" class="container">
+            <div class="grid">
+                <div class="row align-items-center">
+                    <div class="referal col-12 col-m-6 col-l-4 row">
+                        <div class="col-3">
+                            <img src="https://picsum.photos/id/64/72/72" alt="Referencia 1" />
+                        </div>
+                        <div class="col-8 align-items-center">
+                            <strong>HTML Semántico</strong>
+                            <blockquote>
+                                Estructura clara para organizar secciones, navegación,
+                                contenido principal y pie de página.
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="referal col-12 col-m-6 col-l-4 row">
+                        <div class="col-3">
+                            <img src="https://picsum.photos/id/65/72/72" alt="Referencia 2" />
+                        </div>
+                        <div class="col-8 align-items-center">
+                            <strong>LESS CSS</strong>
+                            <blockquote>
+                                Uso de variables, imports y estilos separados para trabajar
+                                de manera ordenada como en clase.
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="referal col-12 col-m-6 col-l-4 row">
+                        <div class="col-3 align-items-center">
+                            <img src="https://picsum.photos/id/91/72/72" alt="Referencia 3" />
+                        </div>
+                        <div class="col-8">
+                            <strong>Vite</strong>
+                            <blockquote>
+                                Herramienta utilizada para compilar, minificar y generar
+                                la versión final del portafolio.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <form action="index.html" method="get">
+                    <div class="field">
+                        <label for="txtNombre">Nombre Completo</label>
+                        <input type="text" placeholder="Nombre Completo" name="txtNombre" id="txtNombre" />
+                    </div>
+
+                    <div class="field">
+                        <label for="txtEmail">Correo Electrónico</label>
+                        <input type="email" placeholder="uncorreo@host.com" name="txtEmail" id="txtEmail" />
+                    </div>
+
+                    <div class="field">
+                        <label for="txtComment">Comentario u Observación</label>
+                        <br />
+                        <textarea
+                            id="txtComment"
+                            name="txtComment"
+                            placeholder="Escribe un comentario u observación."
+                        ></textarea>
+                    </div>
+
+                    <div class="field-actions">
+                        <button type="submit" name="btnEnviar" id="btnEnviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="https://picsum.photos/id/48/720/720" media="(min-width:720px)" />
+                    <img src="https://picsum.photos/id/48/320/320" alt="Imagen de contacto" />
+                </picture>
+            </div>
+        </section>
+
+        <section id="precios">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Uso</th>
+                            <th>Aplicación</th>
+                            <th>Estado</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                            <td>Secciones del portafolio</td>
+                            <td>Completado</td>
+                            <td>Base del sitio</td>
+                        </tr>
+
+                        <tr>
+                            <td>LESS</td>
+                            <td>Estilos</td>
+                            <td>CSS generado</td>
+                            <td>Completado</td>
+                            <td>Diseño ordenado</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vite</td>
+                            <td>Bundler</td>
+                            <td>Compilación del proyecto</td>
+                            <td>Completado</td>
+                            <td>Build optimizado</td>
+                        </tr>
+
+                        <tr>
+                            <td>PurgeCSS</td>
+                            <td>Optimización</td>
+                            <td>Eliminar CSS no usado</td>
+                            <td>Configurado</td>
+                            <td>CSS purgado</td>
+                        </tr>
+
+                        <tr>
+                            <td>GitHub Pages</td>
+                            <td>Despliegue</td>
+                            <td>Publicación web</td>
+                            <td>Pendiente</td>
+                            <td>Enlace público</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Portafolio desarrollado para la clase de Portales Web 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>Todos los derechos reservados 2026 ICC UNICAH</div>
+    </footer>
+</body>
+</html>

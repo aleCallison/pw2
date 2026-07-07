@@ -1,0 +1,166 @@
+.card {
+    background-color: @white-color;
+    padding: 1.5rem;
+    border-radius: @radius;
+    text-align: center;
+    box-shadow: @shadow;
+
+    .card_image {
+        margin-bottom: 1rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    h2 {
+        color: @primary-color;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .card_footer {
+        a {
+            background-color: @primary-color;
+            color: @white-color;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+
+            &:hover {
+                background-color: @dark-color;
+            }
+        }
+    }
+}
+
+.referal {
+    background-color: @white-color;
+    padding: 1rem;
+    border-radius: @radius;
+    box-shadow: @shadow;
+
+    img {
+        border-radius: 50%;
+    }
+
+    strong {
+        color: @primary-color;
+    }
+
+    blockquote {
+        margin-top: 0.5rem;
+        font-style: italic;
+    }
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: @max-width;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+
+    form {
+        background-color: @white-color;
+        padding: 2rem;
+        border-radius: @radius;
+        box-shadow: @shadow;
+    }
+
+    .field {
+        margin-bottom: 1rem;
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid @gray-color;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+    }
+
+    .field-actions {
+        button {
+            background-color: @primary-color;
+            color: @white-color;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+
+            &:hover {
+                background-color: @dark-color;
+            }
+        }
+    }
+
+    picture,
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: @radius;
+        object-fit: cover;
+    }
+}
+
+#precios {
+    max-width: @max-width;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    background-color: @white-color;
+    padding: 1rem;
+    border-radius: @radius;
+    box-shadow: @shadow;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 1px solid @gray-color;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: @primary-color;
+            color: @white-color;
+        }
+
+        tfoot {
+            background-color: @secondary-color;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #contact {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,62 @@
+#hero {
+    position: relative;
+
+    > div {
+        position: relative;
+    }
+
+    picture,
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    img {
+        max-height: 560px;
+        object-fit: cover;
+    }
+
+    .action {
+        position: absolute;
+        left: 8%;
+        bottom: 15%;
+        background-color: rgba(17, 24, 39, 0.85);
+        color: @white-color;
+        padding: 2rem;
+        border-radius: @radius;
+        max-width: 470px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            background-color: @secondary-color;
+            color: @dark-color;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+
+            &:hover {
+                background-color: @white-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        .action {
+            position: static;
+            max-width: 100%;
+            border-radius: 0;
+        }
+    }
+}
